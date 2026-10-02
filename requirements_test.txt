@@ -1,0 +1,7 @@
+# Test dependencies. Requires Python 3.14+ (matches current homeassistant
+# core's requires-python). Every test, including api.py's, runs through this
+# harness: importing anything under custom_components.r6_data_relay always
+# executes __init__.py first, which needs homeassistant, so there's no
+# meaningful way to test api.py in a lighter environment.
+homeassistant
+pytest-homeassistant-custom-component

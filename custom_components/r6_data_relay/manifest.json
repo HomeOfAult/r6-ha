@@ -1,0 +1,11 @@
+{
+  "domain": "r6_data_relay",
+  "name": "R6 Data Relay",
+  "codeowners": ["@thault"],
+  "config_flow": true,
+  "documentation": "https://github.com/thault/r6-ha",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/thault/r6-ha/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

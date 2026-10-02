@@ -1,0 +1,52 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "base_url": "Base URL",
+          "api_token": "API token",
+          "verify_ssl": "Verify SSL certificate"
+        },
+        "data_description": {
+          "base_url": "The full base URL of your r6-data-relay server, including scheme and port",
+          "api_token": "The relay's API_SHARED_TOKEN",
+          "verify_ssl": "Turn off if the relay uses a certificate from a CA that Home Assistant doesn't trust (e.g. an internal CA)"
+        }
+      },
+      "reauth_confirm": {
+        "data": {
+          "api_token": "API token"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect. Check the base URL, the SSL setting, and that the relay is reachable from Home Assistant.",
+      "invalid_auth": "Invalid API token.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This relay is already configured.",
+      "reauth_successful": "Re-authentication was successful."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_match": {
+        "name": "Next match"
+      },
+      "last_result": {
+        "name": "Last result",
+        "state": {
+          "win": "Win",
+          "loss": "Loss",
+          "no_result": "No result"
+        }
+      }
+    },
+    "binary_sensor": {
+      "playing_now": {
+        "name": "Playing now"
+      }
+    }
+  }
+}
